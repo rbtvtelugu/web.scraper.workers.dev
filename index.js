@@ -10,8 +10,8 @@ addEventListener('fetch', event => {
 async function handleRequest(request) {
   const searchParams = new URL(request.url).searchParams
 
-  let url = searchParams.get('url')
-  if (url && !url.match(/^[a-zA-Z]+:\/\//)) url = 'http://' + url
+  let url = "https://ww7.5movierulz.blue/category/telugu-movie/"
+  //if (url && !url.match(/^[a-zA-Z]+:\/\//)) url = 'http://' + url
 
   const selector = searchParams.get('selector')
   const attr = searchParams.get('attr')
