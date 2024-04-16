@@ -10,11 +10,13 @@ addEventListener('fetch', event => {
 async function handleRequest(request) {
   const searchParams = new URL(request.url).searchParams
 
-  let url = "https://ww7.5movierulz.blue/category/telugu-movie/"
+  let url = 'https://ww7.5movierulz.blue/category/telugu-movie/'
   //if (url && !url.match(/^[a-zA-Z]+:\/\//)) url = 'http://' + url
 
-  const selector = searchParams.get('selector')
-  const attr = searchParams.get('attr')
+  //const selector = searchParams.get('selector')
+  /const selector = '#main div.content.home_style a'
+  //const attr = searchParams.get('attr')
+  const attr = 'title'
   const spaced = searchParams.get('spaced') // Adds spaces between tags
   const pretty = searchParams.get('pretty')
 
